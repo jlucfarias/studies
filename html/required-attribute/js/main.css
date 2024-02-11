@@ -1,0 +1,53 @@
+body {
+  position: relative;
+}
+
+.float-required-error {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: #212121;
+  box-shadow: 3px 3px 5px #bbb;
+  position: absolute;
+  gap: 8px;
+  font-family: system-ui;
+  font-weight: 500;
+  font-size: 14px;
+  border: 1px solid #888;
+  border-radius: 3px;
+}
+
+.float-required-error:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #fff;
+  position: absolute;
+  top: -8px;
+  left: 8px;
+  z-index: 1;
+}
+
+.float-required-error:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #888;
+  position: absolute;
+  top: -9px;
+  left: 7px;
+}
+
+.float-required-error span {
+  color: white;
+  background-color: #ff9200;
+  font-size: 18px;
+  padding: 1px 8px;
+  font-weight: bold;
+  border-radius: 2px;
+}
